@@ -4,9 +4,9 @@
 */
 
 :root {
-  /* Color System - Based on Logo: Deep Blue/Purple and Silver/Gray */
-  --color-primary: #3730a3; /* Deep Indigo - Matches logo blue/purple */
-  --color-primary-dark: #1e1b4b; /* Darker Indigo */
+  /* Color System - Based on Logo */
+  --color-primary: #0857a1; /* Matches logo blue */
+  --color-primary-dark: #06437a; /* Darker Blue */
   --color-secondary: #64748b; /* Slate Gray - Matches logo silver/gray */
   --color-secondary-dark: #0f172a; /* Near Black */
   --color-bg-light: #f8fafc; /* Slate 50 - Crisp background */
@@ -625,185 +625,6 @@ h2 {
   font-size: 0.95rem;
 }
 
-/* Estimator Section */
-.estimator-section {
-  padding: var(--section-padding);
-  background-color: var(--color-secondary-dark);
-}
-
-.estimator-card {
-  background-color: var(--color-white);
-  border-radius: 24px;
-  display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
-  overflow: hidden;
-  box-shadow: var(--shadow-lg);
-  margin-top: 40px;
-}
-
-.estimator-controls {
-  padding: 60px;
-}
-
-.control-group {
-  margin-bottom: 40px;
-}
-
-.control-label {
-  display: block;
-  font-size: 1.1rem;
-  font-weight: 700;
-  margin-bottom: 15px;
-  color: var(--color-secondary-dark);
-}
-
-.form-select {
-  width: 100%;
-  padding: 15px;
-  border-radius: 10px;
-  border: 2px solid #e2e8f0;
-  font-family: inherit;
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--color-secondary-dark);
-  cursor: pointer;
-}
-
-.slider-label-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.slider-value {
-  font-weight: 800;
-  color: var(--color-primary);
-  font-size: 1.25rem;
-}
-
-.form-slider {
-  width: 100%;
-  height: 6px;
-  background: #e2e8f0;
-  border-radius: 5px;
-  outline: none;
-  -webkit-appearance: none;
-  margin: 20px 0 10px;
-}
-
-.form-slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  width: 24px;
-  height: 24px;
-  background: var(--color-primary);
-  border: 4px solid var(--color-white);
-  border-radius: 50%;
-  cursor: pointer;
-  box-shadow: var(--shadow-sm);
-}
-
-.slider-hints {
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.75rem;
-  color: var(--color-text-muted);
-  font-weight: 600;
-}
-
-.radio-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 15px;
-}
-
-.radio-card {
-  position: relative;
-  padding: 20px;
-  border: 2px solid #e2e8f0;
-  border-radius: 12px;
-  cursor: pointer;
-  transition: var(--transition);
-}
-
-.radio-card input {
-  position: absolute;
-  opacity: 0;
-}
-
-.radio-card.active {
-  border-color: var(--color-primary);
-  background-color: rgba(217, 119, 6, 0.05);
-}
-
-.radio-title {
-  display: block;
-  font-weight: 800;
-  font-size: 1rem;
-  margin-bottom: 5px;
-}
-
-.radio-desc {
-  font-size: 0.8rem;
-  color: var(--color-text-muted);
-  line-height: 1.4;
-}
-
-.estimator-results {
-  background-color: #f8fafc;
-  padding: 60px;
-  border-left: 1px solid #e2e8f0;
-  display: flex;
-  flex-direction: column;
-}
-
-.results-heading {
-  font-size: 1.5rem;
-  margin-bottom: 30px;
-}
-
-.result-row {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 15px;
-  font-size: 1rem;
-  font-weight: 600;
-}
-
-.result-divider {
-  height: 1px;
-  background-color: #e2e8f0;
-  margin: 20px 0;
-}
-
-.result-total-box {
-  background-color: var(--color-secondary);
-  padding: 30px;
-  border-radius: 16px;
-  color: var(--color-white);
-  text-align: center;
-  margin-top: auto;
-  margin-bottom: 30px;
-}
-
-.total-label {
-  font-size: 0.85rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  opacity: 0.8;
-}
-
-.total-price {
-  font-size: 2.25rem;
-  font-weight: 800;
-  color: var(--color-primary);
-  margin: 10px 0;
-}
-
-.price-disclaimer {
-  font-size: 0.75rem;
-  opacity: 0.6;
-}
-
 /* FAQ */
 .faq-section {
   padding: var(--section-padding);
@@ -1020,17 +841,12 @@ h2 {
 
 /* Mobile Responsive */
 @media (max-width: 1024px) {
-  .hero-grid, .process-grid, .estimator-card, .contact-grid {
+  .hero-grid, .process-grid, .contact-grid {
     grid-template-columns: 1fr;
   }
   
   .hero-visual, .process-interactive {
     order: -1;
-  }
-  
-  .estimator-results {
-    border-left: none;
-    border-top: 1px solid #e2e8f0;
   }
   
   .footer-grid {
@@ -1082,7 +898,7 @@ h2 {
     grid-template-columns: 1fr;
   }
   
-  .estimator-controls, .estimator-results, .form-wrapper {
+  .form-wrapper {
     padding: 30px;
   }
 }
